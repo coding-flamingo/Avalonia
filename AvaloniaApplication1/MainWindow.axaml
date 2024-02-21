@@ -2,8 +2,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaApplication1.MainWindow"
         Title="AvaloniaApplication1">
-    Welcome to Avalonia!
+    <StackPanel>
+        <controls:Card Margin="16">
+            <TextBlock Classes="Headline6" Text="Hello world with Material.Avalonia!"/>
+        </controls:Card>
+        <TextBlock Classes="Headline4 Subheadline" Text="Buttons" />
+        <CheckBox Name="IsEnabledCheckBox"
+                  Content="Buttons is enabled"
+                  IsChecked="True"/>
+        <Button Classes="dark" Content="Dark" ToolTip.Tip='Button with classes "Dark"' />
+
+    </StackPanel>
 </Window>
