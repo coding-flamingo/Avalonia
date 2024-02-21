@@ -1,5 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
+        <Description>This repository is a set of styles that will help you customize your application in an appropriate material design.</Description>
+        <PackageTags>avalonia xaml material design theme colour color ui ux material-design google-material</PackageTags>
+        <PackageIcon>FavIcon1.png</PackageIcon>
         <OutputType>WinExe</OutputType>
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
@@ -20,5 +23,9 @@
         <PackageReference Include="Material.Avalonia.DataGrid" Version="3.3.0" />
         <PackageReference Include="Material.Avalonia.Dialogs" Version="3.3.0" />
         <PackageReference Include="Material.Icons.Avalonia" Version="2.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Assets\**"/>
     </ItemGroup>
 </Project>
